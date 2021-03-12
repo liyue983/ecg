@@ -69,6 +69,14 @@
                     },
                     series: [{
                         name: 'Random data',
+                        marker: {//线上数据点
+                            radius: 0,
+                            states: {
+                                hover: {
+                                    enabled: false
+                                }
+                            }
+                        },
                         data: (function () {
                             // generate an array of random data                             
                             var data = [],
